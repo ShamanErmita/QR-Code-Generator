@@ -14,14 +14,12 @@ generateBtn.addEventListener("click", () => {
     preValue = qrValue;
     generateBtn.innerText = "Generating QR Code...";
 
-    // Adjust the API URL based on the selected QR Code type
     let apiUrl;
     switch (qrType) {
         case "url":
             apiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(qrValue)}`;
             break;
         case "text":
-            // Using a different API endpoint for plain text
             apiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=text:${encodeURIComponent(qrValue)}`;
             break;
         case "email":
