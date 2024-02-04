@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+          <h1>QR Code Generator</h1>
+          <label for="qrType">Select QR Code Type:</label>
+          <select id="qrType">
+              <option value="url">URL</option>
+              <option value="text">Text</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone Number</option>
+          </select>
+          <input type="text" id="qrInput" placeholder="Enter QR Code Data">
+          <button id="generateBtn">Generate QR Code</button>
+      </div>
+      <div class="qr-code">
+          <img src="" alt="QR Code">
+      </div>
+  </div>  
+    <script src="script.js"></script>
+  </body>
+</html>
